@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASTY KITCHEN</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./logo-of-site/favicon (4).ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Menu</h1>
+    <form class="hero-input-box">
+        <div class="box-of-inputs">
+        <div class="input-box-apex">
+            <input required id="input-name-food" placeholder="Name of food" type="text">
+            <input required id="input-price-food" placeholder="Price of food" type="number">
+            <input required id="input-link-food" placeholder="Link of food" type="text">
+        </div>
+        <div class="input-box-low">
+            <input required id="input-name-chief" placeholder="Name of chief" type="text">
+            <input required id="input-name-restaurant" placeholder="Name of restaurant" type="text">
+        </div>
+    </div>
+    <div class="hero-btn">
+        <button type="submit" id="btn-add">Add <i class="bi bi-bag-plus-fill"></i></button>
+    </div>
+    </form>
+    <div class="delete-all-btn-box">
+    <button id="btn-delete">Delete All <i class="bi bi-calendar-x-fill"></i></button>
+</div>
+    <div class="box-added-options"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

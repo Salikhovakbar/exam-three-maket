@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+font-family: sans-serif;
+}
+body{
+    background-color: cornflowerblue;
+}
+h1{
+    color: white;
+    text-align: center;
+margin-top: 20px;
+}
+.hero-input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-of-inputs{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.input-box-low{
+    width: 100%;
+    display: flex; 
+    justify-content: center;  
+   }
+input{
+    margin: 10px;
+border-radius: 5px;
+outline: none;
+padding: 5px 2px ;
+border: none;
+background-color: rgb(235, 235, 235);
+}
+.input-box-low >  input:last-child{
+    width: 64%;
+}
+
+button{
+    cursor: pointer;
+}
+#btn-add{
+    background-color: rgb(24, 224, 24);
+    border: none;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+#btn-add:hover{
+    background-color: green;
+    transition: 1s;
+}
+#btn-add:active{
+    box-shadow: 0px 0px 0px 3px chartreuse;
+    transition: none;
+}
+#btn-delete{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 3px;
+}
+#btn-delete:hover{
+    background-color: orangered;
+    transition: 1s;
+}
+#btn-delete:active{
+    box-shadow: 0px 0px 0px 3px orange;
+    transition: none;
+}
+.box-added-options{
+    margin-top: 50px;
+}
+.added-box-task{
+    width: 80%;
+    background-color: white;
+margin: auto;
+margin-top: 20px;
+border-radius: 5px;
+animation-name: showup;
+animation-duration: 0.5s;
+animation-direction: alternate;
+}
+@keyframes  showup{
+   10%{
+transform: scale(0.5);
+   } 
+   30%{
+    transform: scale(1.1);
+       } 
+       100%{
+        transform: scale(1);
+           } 
+}
+.inside-the-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+}
+.inside-the-box > img{
+    max-width: 100px;
+    border-radius: 5px;
+}
+.spanEl{
+    font-weight: 700;
+}
+.text-box{
+    margin-left: 15px;
+}
+.box-of-btn{
+    display: flex;
+    flex-direction: column;
+
+}
+.box-of-btn > button{
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    margin-top: 5px;
+}
+.box-of-btn > button:first-child{
+    padding: 5px 0;
+    background-color: red;
+
+}
+.box-of-btn > button:nth-child(2){
+   background-color: gold;
+}
+.box-of-btn > button:last-child{
+    background-color: green; 
+}
+.delete-all-btn-box{
+    width: 87.3%;
+    margin: auto;
+}
